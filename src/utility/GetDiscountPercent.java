@@ -6,7 +6,7 @@ import java.util.TreeMap;
 public class GetDiscountPercent {
     private static TreeMap<Double, Integer> bulkDiscountRules = new TreeMap<>();
 
-    public void addDiscountPercent() {
+    public static void addDiscountPercent() {
         bulkDiscountRules.put(2000.0,5);
         bulkDiscountRules.put(5000.0,10);
         bulkDiscountRules.put(10000.0,15);
