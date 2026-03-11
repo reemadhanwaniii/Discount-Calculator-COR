@@ -26,3 +26,26 @@ If the criteria are met, the handler modifies the order's price.
 
 The handler must then pass the (potentially modified) order to the next handler in the chain until the end is reached.
 
+### Non Functional Requirements
+
+#### Extensibility
+
+System should allow adding new discounts easily:
+
+Examples:
+
+FestivalDiscount
+
+FirstTimeUserDiscount
+
+PaymentMethodDiscount
+
+Without modifying existing code.
+
+#### Modularity
+
+Each discount rule should be implemented in separate classes.
+
+#### Maintainability
+
+Discount logic should not be tightly coupled
